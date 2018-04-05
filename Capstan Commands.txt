@@ -1,0 +1,6 @@
+capstan run -v -p vbox
+
+vboxmanage clonehd ~/.capstan/repository/osv-mosquitto/osv-mosquitto.vbox ~/.capstan/repository/osv-mosquitto/osv-mosquitto.vhd --format VHD
+
+
+vboxmanage clonehd ~/.capstan/repository/capstan-example-java/capstan-example-java.vbox ~/Desktop/capstan-example-java.vhd --format VHD

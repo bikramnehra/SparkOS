@@ -1,0 +1,1 @@
+builder='hvm'xen_platform_pci=1acpi=1apic=1boot='c'vncdisplay=1memory=2048vcpus=2maxcpus=2name='osv-5006'disk=['<osv-raw>,raw,hda,rw']serial='pty'paused=0on_crash='preserve'vif=['bridge=virbr0']

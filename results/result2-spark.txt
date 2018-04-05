@@ -1,0 +1,15 @@
+Result: scheduling-throughput, scheduling-throughput --num-trials=10 --inter-trial-wait=3 --num-tasks=10000 --num-jobs=1 --closure-size=0 --random-seed=5, 7.2055, 0.735, 6.935, 7.989, 7.014
+
+Result: scala-agg-by-key, aggregate-by-key --num-trials=10 --inter-trial-wait=3 --num-partitions=20 --reduce-tasks=20 --random-seed=5 --persistent-type=memory  --num-records=10000000 --unique-keys=1000 --key-length=10 --unique-values=50000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 15.1425, 0.106, 15.019, 15.359, 15.019
+
+Result: scala-agg-by-key-int, aggregate-by-key-int --num-trials=10 --inter-trial-wait=3 --num-partitions=40 --reduce-tasks=40 --random-seed=5 --persistent-type=memory  --num-records=20000000 --unique-keys=2000 --key-length=10 --unique-values=100000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 1.756, 0.077, 1.647, 1.908, 1.647
+
+Result: scala-agg-by-key-naive, aggregate-by-key-naive --num-trials=10 --inter-trial-wait=3 --num-partitions=20 --reduce-tasks=20 --random-seed=5 --persistent-type=memory  --num-records=10000000 --unique-keys=1000 --key-length=10 --unique-values=50000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 20.567, 0.098, 20.376, 20.599, 20.376
+
+Result: scala-sort-by-key, sort-by-key --num-trials=10 --inter-trial-wait=3 --num-partitions=2 --reduce-tasks=2 --random-seed=5 --persistent-type=memory  --num-records=1000000 --unique-keys=100 --key-length=10 --unique-values=5000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 5.1195, 1.234, 4.556, 5.293, 6.16
+
+Result: scala-sort-by-key-int, sort-by-key-int --num-trials=10 --inter-trial-wait=3 --num-partitions=4 --reduce-tasks=4 --random-seed=5 --persistent-type=memory  --num-records=2000000 --unique-keys=200 --key-length=10 --unique-values=10000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 1.543, 0.087, 1.405, 1.728, 1.531
+
+Result: scala-count, count --num-trials=10 --inter-trial-wait=3 --num-partitions=20 --reduce-tasks=20 --random-seed=5 --persistent-type=memory  --num-records=10000000 --unique-keys=1000 --key-length=10 --unique-values=50000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 14.7865, 0.042, 14.741, 14.878, 14.757
+
+Result: scala-count-w-fltr, count-with-filter --num-trials=10 --inter-trial-wait=3 --num-partitions=20 --reduce-tasks=20 --random-seed=5 --persistent-type=memory  --num-records=10000000 --unique-keys=1000 --key-length=10 --unique-values=50000 --value-length=10  --storage-location=hdfs://ip-172-31-14-177:9000/test//spark-perf-kv-data, 13.507, 0.082, 13.388, 13.668, 13.491
